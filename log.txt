@@ -1,0 +1,20 @@
+Lanzada por el usuario admin
+Running as SYSTEM
+Ejecutando. en el espacio de trabajo /var/lib/jenkins/workspace/Alta de usuarios en Linux
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Alta de usuarios en Linux/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/proxyfail/Bootcamp-devops-2025.git # timeout=10
+Fetching upstream changes from https://github.com/proxyfail/Bootcamp-devops-2025.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/proxyfail/Bootcamp-devops-2025.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision fe8783d20d8e7a089798ff02b6f850a326643e8f (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fe8783d20d8e7a089798ff02b6f850a326643e8f # timeout=10
+Commit message: "altaDeUsuarios.groovy"
+ > git rev-list --no-walk fe8783d20d8e7a089798ff02b6f850a326643e8f # timeout=10
+Finished: SUCCESS
