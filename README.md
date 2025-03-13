@@ -2,12 +2,32 @@
 
 En el diagrama "altaDeUsuario.excalidraw", graficamos la creacion de un usuario de Linux con los datos: id unico, nombre y apellido, departamento. Estos datos una vez creados son resguardados para posteriormente ser enviados al usuario final.
 
+Para poder realizar este desafio inicialmente tendremos que realizar los siguientes puntos en el orden que se indica a continuacion:
+
+1- Crear una cuenta de Github en el siguiente link: https://github.com/
+Crear un nuevo repositorio del tipo publico para esta prueba.
+
+2- Instalar Git, para lo cual utilizaremos el comando 'sudo apt install git'
+En el siguiente link: https://github.com/proxyfail/git encontramos una guia de configuracion de git.
+    
+3- Instalar Jenkins
+En el siguiente enlace tenemos una guia de instalacion y configuracion: https://www.jenkins.io/doc/book/installing/linux/
+
+4- Instalar Ngrok
+Crear una cuenta en el sitio: https://ngrok.com/
+A continuacion tenemos una guia de instalacion y configuracion de Ngrok: https://ngrok.com/downloads/linux
+
+5 -En el siguiente video tenemos un ejemplo de como poder utilizar el archivo 'altaDeUsuarios.groovy' dentro de Jenkins para poder crear un pipeline con este y ademas configurar las herramientas vincular las herramientas del punto 1, 2, 3 y 4: https://www.youtube.com/watch?v=oJsIib4FVt8
+
+
+Script de alta de usuario:
+
 El archivo "altaDeUsuarios.groovy" es un script de pipeline de Jenkins escrito en Groovy. Su propósito es crear un nuevo usuario en un sistema Linux, generar una contraseña temporal para el usuario, mostrar la contraseña temporal y enviarla por correo electrónico. A continuación, se explica el funcionamiento del archivo:
 
 1. **Definición del pipeline**:
     ```groovy
     pipeline {
-        agent any
+        agent any}
     ```
 El pipeline se ejecuta en cualquier agente disponible.
 
